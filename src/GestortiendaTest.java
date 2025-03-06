@@ -27,10 +27,13 @@ class GestortiendaTest {
 	        }
 
 	    @Test
+	 
 	    void testBuscarProducto() {
 	        String[] inventario = {"Calcetines", "Zapatillas", "Camiseta"};
-	        assertEquals("Calcetines", gestor.buscarProducto(inventario, "Calcetines")); 
-	        assertNull(gestor.buscarProducto(inventario, "Camiseta")); 
+	        
+	        assertEquals("Calcetines", gestor.buscarProducto(inventario, "Calcetines"));
+	        assertEquals("Zapatillas", gestor.buscarProducto(inventario, "Zapatillas")); 
 	        assertEquals("Camiseta", gestor.buscarProducto(inventario, "Camiseta")); 
-	        }
-	}
+	    }
+}
+
